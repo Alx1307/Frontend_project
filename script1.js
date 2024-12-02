@@ -46,7 +46,7 @@ studentPhoto.addEventListener('mouseout', () => {
 });
 
 studentPhoto.addEventListener('click', () => {
-    studentPhoto.src = 'teacher.png';
+    studentPhoto.src = 'media\teacher.png';
 });
 
 studentPhoto.addEventListener('dblclick', () => {
