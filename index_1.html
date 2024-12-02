@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фронтенд и бэкенд разработка</title>
+    <link rel = "icon" href = "1.png" type = "image/png">
+    <link rel = "stylesheet" href = "styles.css">
+    <!--script src = "script.js" defer></script-->
+</head>
+
+<body>
+    <header>
+        <div class = header>
+            <img class = logo_img src = "logo.png" alt = "Логотип" style = "border-radius: 20px">
+            <p class = header_text>Группа ЭФБО-01-23<br>Хмара Екатерина Евгеньевна</p>
+        </div>    
+    </header>
+
+    
+    <main>
+        <div class = menu>
+            <nav class = navigation>
+                <a href = "index.html">Главная</a>
+                <a href = "index_2.html">Первый семестр</a>
+                <a href = "index.html">Второй семестр</a>
+                <a href = "index_1.html">Услуги</a>
+                <a href = "index_3.html">Авторизация</a>
+            </nav>
+        </div>
+
+        <div class = container>
+            <div class = main-content>
+                <div class = "sidebar">
+                    <p class = sidebar-text><strong>Навигация по&nbsp;странице:</strong><br></p>
+                    <a href = "#vissite">Сайт-визитка<br></a>
+                    <a href = "#site">Корпоративный сайт</a>
+                    <a href = "#store">Интернет-магазин</a>
+                </div>
+    
+                <article class = content>
+                    <!--h1>Utm_term отсутствует</h1-->
+                    <h3 class = main-heading>Разработка веб-приложений</h3>
+
+                    <div id="successMessage" class = "message">
+                        Заявка успешно отправлена!
+                    </div>
+    
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="profile.png" alt="Сайт-визитка">
+                            <p>Сайт-визитка</p>
+                            <button id="openModal">Заказать</button>
+                        </div>
+                        <div class="card">
+                            <img src="page.png" alt="Корпоративный сайт">
+                            <p>Корпоративный сайт</p>
+                            <button id="openModal2">Заказать</button>
+                        </div>
+                        <div class="card">
+                            <img src="shop.png" alt="Интернет-магазин">
+                            <p>Интернет-магазин</p>
+                            <button id="openModal3">Заказать</button>
+                        </div>
+                        <div class="card">
+                            <img src="profile.png" alt="Сайт-визитка">
+                            <p>Сайт-визитка</p>
+                            <button id="openModal">Заказать</button>
+                        </div>
+                        <div class="card">
+                            <img src="page.png" alt="Корпоративный сайт">
+                            <p>Корпоративный сайт</p>
+                            <button id="openModal2">Заказать</button>
+                        </div>
+                        <div class="card">
+                            <img src="shop.png" alt="Интернет-магазин">
+                            <p>Интернет-магазин</p>
+                            <button id="openModal3">Заказать</button>
+                        </div>
+                    </div>
+    
+                    <div id="modal" class = "modal">
+                        <div class = "modal-content">
+                            <span class="close"></span>
+                            <form id="contactForm">
+                                <h2>Разработка веб-приложения</h2>
+                                    <p><p>Заполните форму и&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;вами в&nbsp;ближайшее время для уточнения деталей</p>
+                                    <div class = "form-group">
+                                        <label for = "name" >Как вас зовут</label>
+                                        <input type = "text" id = "name" name = "name" placeholder="Например, Иванов Иван Иванович" required><br>
+                                    </div>
+    
+                                    <div class = "form-group">
+                                        <label for = "email">Ваш e-mail</label>
+                                        <input type = "email" id = "email" name = "email" placeholder="test@mail.ru" required><br>
+                                    </div>
+    
+                                    <div class = "form-group">  
+                                        <label for = "phone">Телефон</label>
+                                        <input type = "text" id = "phone" name = "phone" placeholder="+7 919 999 99 99" required><br>
+                                    </div>
+    
+                                    <div class = "form-group">
+                                        <label for = "country">Страна</label>
+                                        <select id = "country" name = "country" required>
+                                            <option value="">Выберите страну</option>
+                                            <option value="Россия">Россия</option>
+                                            <option value="Монако">Монако</option>
+                                            <option value="Индия">Индия</option>
+                                        </select><br>
+                                    </div>
+    
+                                    <div class = "form-group">
+                                        <label for = "date">Дата</label>
+                                        <input type = "date" id = "date" name = "date" required><br>
+                                    </div>
+    
+                                    <div class = "form-group">
+                                        <label for = "comments">Комментарий</label>
+                                        <textarea id = "comments" name = "comments" required></textarea><br>
+                                    </div>
+                            
+                                    <div class = "form-group">
+                                        <input type = "checkbox" id = "check" name = "check" required>
+                                        <label for = "check">Согласен на обработку моих персональных данных</label><br>
+                                    </div>
+    
+                                    <input type="hidden" id="type" name="type" value="">
+                            
+                                    <button type = "submit" class = my-button>Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>                
+                    
+                    <div>
+                        <p>Я&nbsp;рада приветствовать вас на&nbsp;своем сайте, где вы&nbsp;можете найти всю необходимую информацию об&nbsp;услугах. Мои услуги включают разработку <nobr>сайтов-визиток</nobr>, корпоративных сайтов и&nbsp;<nobr>интернет-магазинов</nobr>:</p>
+                        <p id = "vissite">&mdash;&nbsp;<nobr><strong>Сайт-визитка</strong></nobr>&nbsp;&mdash; это идеальное решение для бизнеса или фрилансеров, которым необходимо представить свои услуги и&nbsp;контактную информацию в&nbsp;интернете. Вы&nbsp;можете заказать стильный и&nbsp;функциональный <nobr>сайт-визитку</nobr>, который привлечет внимание ваших клиентов;</p>
+                        <p id = "site">&mdash;&nbsp;<strong>Корпоративный сайт</strong>&nbsp;&mdash; это лицо вашей компании в&nbsp;интернете. Я&nbsp;разработаю для вас профессиональный и&nbsp;современный корпоративный сайт, который будет соответствовать вашему бренду и&nbsp;поможет вам привлечь новых клиентов и&nbsp;партнеров;</p>
+                        <p id = "store">&mdash;&nbsp;<nobr><strong>Интернет-магазин</strong></nobr>&nbsp;&mdash; это важный инструмент для продажи ваших товаров и&nbsp;услуг онлайн. Функциональный и&nbsp;удобный <nobr>интернет-магазин</nobr> будет привлекать покупателей и&nbsp;увеличивать ваши продажи.</p>
+                    </div>
+                </article>
+            </div>
+            
+            
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class = social_nets>
+            <a href = "index.html"> <img class = social_nets_img src = "2.jpg" alt = "whatsapp" style = "border-radius: 5px"> </a>
+            <a href = "index.html"> <img class = social_nets_img src = "vk.png" alt = "vk"> </a>
+        </div>
+        <p>&copy; Хмара Екатерина Евгеньевна, 2024</p>    
+    </footer>
+
+    <!--script src = "script.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+                
+    <script>
+        $(document).ready(function(){
+            $("#phone").inputmask("+7 (999) 999-99-99");
+        });
+    
+        const modal = document.getElementById("modal");
+        const btn = document.getElementById("openModal");
+        const btn2 = document.getElementById("openModal2");
+        const btn3 = document.getElementById("openModal3");
+        const span = document.getElementsByClassName("close")[0];
+        const form = document.getElementById("contactForm");
+        const successMessage = document.getElementById("successMessage");
+        const typeInput = document.getElementById("type");
+
+        btn.onclick = function(){
+            modal.style.display = "block";
+        }
+        btn2.onclick = function(){
+            modal.style.display = "block";
+        }
+        btn3.onclick = function(){
+            modal.style.display = "block";
+        }
+
+        btn.addEventListener("click", function() {
+            typeInput.value = "cardsite";
+        });
+        btn2.addEventListener("click", function() {
+            typeInput.value = "corporatesite";
+        });
+        btn3.addEventListener("click", function() {
+            typeInput.value = "onlinestore";
+        });
+
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event){
+            if (event.target === modal){
+                modal.style.display = "none";
+            }
+        }
+
+        const formData = document.getElementById("contactForm");
+
+        formData.addEventListener("submit", function(event) {
+            event.preventDefault();
+            submitForm();
+        });
+
+        function submitForm() {
+            const inputName = formData.elements["name"].value;
+            if (inputName == "") {
+                alert("Вы не ввели имя!");
+                return;
+            }
+
+            const inputEmail = formData.elements["email"].value;
+            if (inputEmail == "") {
+                alert("Вы не ввели E-mail!");
+                return;
+            }
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(inputEmail)) {
+                alert("Введен некорректный E-mail!");
+                return;
+            }
+            
+            const inputPhone = formData.elements["phone"].value;
+            const phoneRegex = /^\+7 \((9[0-9]{2})\) [0-9]{3}-[0-9]{2}-[0-9]{2}$/;
+            if (!phoneRegex.test(inputPhone)) {
+                alert("Введен некорректный номер телефона!");
+                return;
+            }
+
+            const inputCountry = formData.elements["country"].value;
+
+            const inputDate = formData.elements["date"].value;
+
+            const inputComment = formData.elements["comments"].value;
+            if (inputEmail == "") {
+                alert("Вы не ввели комментарий!");
+                return;
+            }
+
+            console.log(`Имя: ${inputName}`);
+            console.log(`E-mail: ${inputEmail}`);
+            console.log(`Телефон: ${inputPhone}`);
+            console.log(`Страна: ${inputCountry}`);
+            console.log(`Дата: ${inputDate}`);
+            console.log(`Комментарий: ${inputComment}`);
+
+            modal.style.display = "none";
+            successMessage.style.opacity = '1';
+            setTimeout(() => {
+                successMessage.style.opacity = '0';
+            }, 2000);
+            form.reset();
+        }
+    </script>
+</body>
+</html>

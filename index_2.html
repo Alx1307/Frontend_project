@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фронтенд и бэкенд разработка</title>
+    <link rel = "icon" href = "1.png" type = "image/png">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+    <header>
+        <div class = header>
+            <img class = logo_img src = "logo.png" alt = "Логотип" style = "border-radius: 20px" id = "studentPhoto">
+            <p class = header_text>Группа ЭФБО-01-23<br>Хмара Екатерина Евгеньевна</p>
+        </div>    
+    </header>
+
+    
+    <main>
+        <div class = menu>
+            <nav class = navigation>
+                <a href = "index.html">Главная</a>
+                <a href = "index_2.html">Первый семестр</a>
+                <a href = "index.html">Второй семестр</a>
+                <a href = "index_1.html">Услуги</a>
+                <a href = "index_3.html">Авторизация</a>
+            </nav>
+        </div>
+
+        <div class = container>
+            <div class = main-content>
+                <div class = "sidebar">
+                    <p class = sidebar-text><strong>Навигация по&nbsp;странице:</strong><br></p>
+                    <a href = "#lections">Лекции<br></a>
+                    <a href = "#practices">Практики<br></a>
+                    <a href = "#address">Адрес вуза<br></a>
+                    <a href = "#studyplan">Рабочая программа</a>
+                </div>
+    
+                <article class = content>
+                    <h1 class = main-heading>Первый семестр</h1>
+                    <img class = student-photo src = "profile.png" alt = "Профиль" id = "photo">
+                    <p id = "changeColor" class = change>Изменить цвет фона</p>
+    
+                    <div>
+                        <div class = "practice-header">
+                            <h4 id = "lectures">Лекции</h4>
+                            <button id = "showLectures" class = "practices-button">Показать лекции</button>
+                        </div>
+
+                        <table id = "lecturesTable" class = lectures-table>
+                            <thead>
+                                <tr class = str>
+                                    <th>Номер</th>
+                                    <th>Тема</th>
+                                    <th>Посещение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class = "first">
+                                    <td>1</td>
+                                    <td>Основы языка HTML</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>2</td>
+                                    <td>Углубленное изучение HTML</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>3</td>
+                                    <td>Основы работы с CSS</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>4</td>
+                                    <td>Адаптивная верстка Flexbox и Grid Layout</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>5</td>
+                                    <td>Bootstrap - работа с фреймворком</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>6</td>
+                                    <td>Основы языка JavaScript</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>7</td>
+                                    <td>Работа с DOM и событиями в JavaScript</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>8</td>
+                                    <td>Введение в GitHub и GitHub Pages</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div>
+                        <div class = "practice-header">
+                            <h4 id = "practices">Практики</h4>
+                            <button id = "changeThemes" class = "practices-button">2 семестр</button>
+                        </div>
+    
+                        <table id = "secondTable">
+                            <thead>
+                                <tr class = str>
+                                    <th>Номер</th>
+                                    <th>Тема</th>
+                                    <th>Посещение</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class = "first">
+                                    <td>1</td>
+                                    <td>Основы языка HTML</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>2</td>
+                                    <td>Формы и кнопки HTML</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>3</td>
+                                    <td>Таблицы и интерактивные элементы HTML</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>4</td>
+                                    <td>Основы работы с CSS</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>5</td>
+                                    <td>Работа с классами в CSS</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>6</td>
+                                    <td>Работа с сетками и разметкой в HTML</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>7</td>
+                                    <td>Адаптивная верстка</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>8</td>
+                                    <td>Bootstrap</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>9</td>
+                                    <td>Основы языка JavaScript</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>10</td>
+                                    <td>Базовые задачи на JS</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>11</td>
+                                    <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>12</td>
+                                    <td>Встраивание скриптов</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>13</td>
+                                    <td>Отладка сценариев</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>14</td>
+                                    <td>Анимации и работа с ними</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "first">
+                                    <td>15</td>
+                                    <td>GitHub</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                                <tr class = "second">
+                                    <td>16</td>
+                                    <td>Защита проекта</td>
+                                    <td><input type = "checkbox"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <div>
+                        <h4 id = "address">Занятия проходят по адресу: Москва, проспект Вернадского, 78, стр. 4</h4>
+                        <iframe class = map src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e99231101773c22dacd4c2d269dd877cd3d3381db9e4fe23653b573add27e39&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                    </div>
+    
+                    <div >
+                        <h4 id = "studyplan">Рабочая программа</h4>
+                        <object class = pdf data = "ПР_3_HTML_Таблицы_и_мультимедиа.pdf" width = "600" height = "500"></object>
+                    </div>
+                </article> 
+            </div>
+                       
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class = social_nets>
+            <a href = "index.html"> <img class = social_nets_img src = "2.jpg" alt = "whatsapp" style = "border-radius: 5px"> </a>
+            <a href = "index.html"> <img class = social_nets_img src = "vk.png" alt = "vk"> </a>
+        </div>
+        <p>&copy; Хмара Екатерина Евгеньевна, 2024</p>    
+    </footer>
+
+    <script src = "script1.js"></script>
+</body>
+</html>

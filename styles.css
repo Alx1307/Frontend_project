@@ -1,0 +1,485 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html{
+    border: solid #006400;
+    border-radius: 10px;
+    overflow-x: hidden;
+    width: 100%;
+}
+body {
+    font-family: Chancery, cursive;
+    background: linear-gradient(to bottom, #f0f7ef, #baf4ba);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+main{
+    line-height: 200%;
+}
+header{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header_text{
+    text-align: right
+}
+.logo_img{
+    height: 45px;
+    width: 45px;
+    float: left;
+}
+.practices-button{
+    width: 100px;
+    margin: 10px;
+}
+.practice-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    border-bottom: solid #006400;
+    flex-wrap: wrap;
+}
+.sidebar {
+    width: 25%;
+}
+.sidebar-text{
+    margin: 5%;
+    font-weight: bold;
+}
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    color:  black;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.content {
+    width: 85%;
+    flex-grow: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: left;
+    border-left: solid #006400;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.main-content{
+    display: flex;
+    flex-grow: 1;
+}
+.my-paragraph{
+    padding-left: 30px;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.social_nets{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 1px;
+}
+.social_nets_img{
+    height: 20px
+}
+.card-container {
+    display: grid;
+    justify-content: space-around;
+    margin: 20px;
+    margin-left: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.card {
+    border: 2px solid #006400;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.card p{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+button{
+    font-family: Chancery, cursive;
+    background-color: #6B8E23;
+    color: #fff;
+    border-color: #006400;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    float: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+}
+button:hover {
+    background-color: #9ACD32;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border: solid #006400;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    height: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 4);
+}
+select{
+    margin: 5px;
+    font-family: Chancery, cursive;
+}
+textarea{
+    margin: 5px;
+}
+form input{
+    align-self: center;
+    font-family: Chancery, cursive;
+    margin: 5px;
+}
+label{
+    margin: 5px;
+}
+.message{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 20px;
+    opacity: 0;
+    transition: color 0.9s ease, opacity 0.9s ease;
+}
+.form-group {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+table{
+    border: solid #006400;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #006400;
+}
+.first{
+    background-color: #F5F5DC;
+}
+.second{
+    background-color: #F0FFF0;
+}
+thead{
+    background-color: #8FBC8F;
+}
+embed{
+    border: solid #006400;
+    border-radius: 10px;
+}
+iframe{
+    position:relative;
+    border-radius: 10px;
+    border: solid #006400;
+}
+.change {
+    padding: 20px;
+    transition: background-color 0.9s ease;
+}
+.navigation{
+    border-radius: 20px;
+    border: solid #006400;
+    margin: 0px;
+    padding: 10px;
+    background-color: #72a572;
+    text-align: center;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+.navigation a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+    color: #54734d;
+}
+.main-heading{
+    text-shadow: 0px 0px 5px #91dd94,
+                 0px 0px 10px #91dd94, 
+                 0px 0px 10px #91dd94,
+                 0px 0px 20px #91dd94;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.str:hover{
+    color: black;
+}
+.lectures-table {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+.student-photo{
+    width: 300px;
+    height: 430px;
+    transition: transform 0.9s ease;
+}
+tbody{
+    text-align: center;
+}
+tbody tr:hover {
+    background: rgb(93, 156, 93);
+    color: #fff;
+}
+.pdf {
+    border: solid #006400;
+    border-radius: 20px;
+}
+.profile{
+    width: 250px;
+    height: auto;
+    float: right;
+    padding: 10px;
+}
+    @media (max-width: 768px) {
+        .sidebar {
+            width: 25%;
+            height: auto;
+        }
+        .sidebar a{
+            width: 100%;
+            height: auto;
+            font-size: 0.8em;
+            word-break: break-word;
+        }
+        .content {
+            width: 75%;
+            height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+        .profile{
+            width: 100px;
+            height: auto;
+        }
+        .main-heading{
+            width: 100%;
+            height: auto;
+            font-size: 0.9em;
+        }
+        .sidebar-text{
+            font-size: 0.8em;
+        }
+        p{
+            font-size: 0.8em;
+        }
+        .my-paragraph{
+            padding: 5px;
+        }
+        h4{
+            margin: 0px;
+            font-size: 0.8em;
+        }
+        .pdf{
+            width: 100%;
+            height: auto;
+        }
+        .map{
+            width: 100%;
+            height: auto;
+        }
+        .card-container{
+            grid-template-columns: repeat(2, 40%);
+            grid-template-rows: repeat(3, 30%);
+            margin: 0px;
+            width: 100%;
+            height: auto;
+            gap: 10px;
+        }
+        .card{
+            width: 100%;
+            height: auto;
+        }
+        .card p{
+            width: 100%;
+            height: auto;
+        }
+        .card img{
+            width: 50%;
+            height: auto;
+        }
+        button{
+            width: 100%;
+            height: auto;
+            max-width: 80px;
+            max-height: 25px;
+            margin: 2px;
+            padding: 0px;
+        }
+        button p{
+            font-size: 0.6em;
+        }
+        .navigation a{
+            font-size: 0.8em;
+        }
+        .main-content{
+            width: 100%;
+            height: auto;
+        }
+        .modal-content {
+            width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+        .my-button{
+            font-size: 0.8em;
+            max-height: 30px;
+            max-width: 120px;
+        }
+    }
+
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+        .sidebar {
+            width: 25%;
+            height: auto;
+        }
+        .sidebar a {
+            width: 100%;
+            height: auto;
+            font-size: 0.8em;
+            word-break: break-word;
+        }
+        .content {
+            width: 75%;
+            height: auto;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .profile {
+            width: 300px;
+            height: auto;
+        }
+        .main-heading {
+            width: 100%;
+            height: auto;
+            font-size: 0.9em;
+        }
+        .sidebar-text {
+            font-size: 0.8em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+        .my-paragraph {
+            padding: 5px;
+        }
+        h4 {
+            margin: 0px;
+            font-size: 0.8em;
+        }
+        .pdf {
+            width: 100%;
+            height: auto;
+        }
+        .map {
+            width: 100%;
+            height: auto;
+        }
+        .card-container {
+            grid-template-columns: repeat(2, 40%);
+            grid-template-rows: repeat(3, 30%);
+            margin: 0px;
+            width: 100%;
+            height: auto;
+            gap: 10px;
+        }
+        .card {
+            width: 100%;
+            height: auto;
+        }
+        .card p {
+            width: 100%;
+            height: auto;
+        }
+        .card img {
+            width: 50%;
+            height: auto;
+        }
+        button {
+            width: 100%;
+            height: auto;
+            max-width: 80px;
+            max-height: 25px;
+            margin: 2px;
+            padding: 0px;
+        }
+        button p {
+            font-size: 0.6em;
+        }
+        .navigation a {
+            font-size: 0.8em;
+        }
+        .main-content {
+            width: 100%;
+            height: auto;
+        }
+        .modal-content {
+            width: 90%;
+            height: auto;
+            padding: 10px;
+        }
+        .my-button {
+            font-size: 0.8em;
+            max-height: 50px;
+            max-width: 120px;
+        }
+    }    

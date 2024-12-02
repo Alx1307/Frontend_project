@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фронтенд и бэкенд разработка</title>
+    <link rel = "icon" href = "1.png" type = "image/png">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class = logo_img src = "logo.png" alt = "Логотип" style = "border-radius: 20px">
+            <p class = header_text>Группа ЭФБО-01-23<br>Хмара Екатерина Евгеньевна</p>
+        </div>    
+    </header>
+
+    
+    <main>
+        <div class = navigation>
+            <a href = "index.html">Главная</a>
+            <a href = "index_2.html">Первый семестр</a>
+            <a href = "index.html">Второй семестр</a>
+            <a href = "index_1.html">Услуги</a>
+            <a href = "index_3.html">Авторизация</a>
+        </div>
+        
+
+        <div class = container>
+            <div class = main-content>
+                <div class = "sidebar">
+                    <p class = sidebar-text>Навигация по&nbsp;странице:<br></p>
+                    <a href = "#frontend">Фронтенд<br></a>
+                    <a href = "#backend">Бэкенд</a>
+                </div>
+    
+                <article class = content>
+                    <div>
+                        <h3 class = main-heading>Добро пожаловать на мой сайт</h3>
+                        <img class = profile src = "profile.png" width="500" height="630" alt = "Профиль">
+                        <p class = my-paragraph>Меня зовут Хмара Екатерина Евгеньевна и я начинающий специалист по веб-разработке.</p>
+                    </div>
+                    
+                    <div>
+                        <h4 id = "frontend">Фронтенд</h4>
+                        <p>Фронтенд (или клиентская часть)&nbsp;&mdash; это то, что видит пользователь. Он&nbsp;включает в&nbsp;себя все визуальные элементы <nobr>веб-сайта</nobr> или приложения; кнопки, формы, изображения и&nbsp;текст. Фронтенд разработчики используют языки разметки и&nbsp;стилизации, такие как <acronym title="HyperText Markup Language" lang="en">HTML</acronym>, <acronym title="Cascading Style Sheets" lang="en">CSS</acronym> и&nbsp;JavaScript, чтобы создавать интерактивные и&nbsp;привлекательные интрефейсы. Основная задача фронтенда&nbsp;&mdash; обеспечить удобство использования и&nbsp;эстетическую привлекательность.</p>
+                        <video controls width = "640" height = "360">
+                            <source src = "video.mp4" type = "video/mp4">
+                        </video>
+                        
+                        <h4 id = "backend">Бэкенд</h4>
+                        <p>Бэкенд (или серверная часть)&nbsp;&mdash; это &laquo;за&nbsp;кулисами&raquo; <nobr>веб-приложения</nobr>. Он&nbsp;отвечает за&nbsp;обработку данных, управление пользователями и&nbsp;взаимодействие с&nbsp;базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или <acronym title="Hypertext Preprocessor" lang="en">PHP</acronym>, а&nbsp;также фреймворки и&nbsp;базы данных для создания логики приложения. Основная задача бэкенда&nbsp;&mdash; обеспечить стабильную работу приложения и&nbsp;безопасность данных.</p>
+                        <video controls width = "640" height = "360">
+                            <source src = "video1.mp4" type = "video/mp4">
+                        </video>
+                    </div>
+                </article>
+            </div>
+                        
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class = social_nets>
+            <a href = "index.html"> <img class = social_nets_img src = "2.jpg" alt = "whatsapp" style = "border-radius: 5px"> </a>
+            <a href = "index.html"> <img class = social_nets_img src = "vk.png" alt = "vk"> </a>
+        </div>
+        <p>&copy; Хмара Екатерина Евгеньевна, 2024</p>    
+    </footer>
+
+    <!--script>
+        //часть1
+        const headerh3 = document.querySelector("h3");
+        headerh3.textContent = "Добро пожаловать на наш сайт!";
+
+        const headerh4 = document.querySelector("h4");
+        headerh4.style.color = "red";
+
+        const text = document.querySelector("p");
+        text.textContent = "Это новый текст параграфа.";
+
+        const closeVideo = document.querySelector("video");
+        closeVideo.style.display = "none";
+    </script-->
+</body>
+</html>
